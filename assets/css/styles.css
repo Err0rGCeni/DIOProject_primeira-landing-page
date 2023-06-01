@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Raleway&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    /* identical to box height */
+    letter-spacing: 0.19em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    color: #33A8DB;
+}
+
+/* Parte 1: header -> banner */
+.banner {
+    box-sizing: border-box;
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png');
+    height: 605px;
+    padding-top: 60px;
+    border-bottom: 1px solid #33A8DB;
+}
+
+.banner .banner-content {
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+.banner .banner-content h1 {
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 47px;
+    background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    text-shadow: 1px 1px 10px #53C8FB77;
+}
+
+.banner p {
+    margin: 12px 0px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.banner button {
+    box-sizing: border-box;
+    padding: 20px 48px;
+    background: transparent;
+    color: #31A8DD;
+    font-family: 'Raleway';
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 20px;
+    border-width: 2px 2px 2px 2px;
+    border-image: linear-gradient(90deg, #3BA1CD 0%, #1572B7 100%);
+    border-image-slice: 9;
+    border-style: solid;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.banner button:hover {
+    background-color: #ffffff11;
+    color: #51C8FD;
+    border-image: linear-gradient(180deg, #5BC1FD 0%, #3592D7 100%);
+    border-image-slice: 7;
+    border-style: solid;
+    cursor: pointer;
+}
+
+/* Parte 2: main -> course-content */
+#course-content {
+    max-width: 800px;
+    margin: 90px auto;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.module {
+    margin: 24px auto;
+    background-color: #252525;
+    padding: 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    text-align: center;
+    line-height: 20px;
+    color: #FFFFFF;
+    border-radius: 57px;
+    border: 1px solid #33A8DB;
+}
+
+.module span {
+    color: #33A8DB;
+}
+
+/* Parte 3: main -> transform-world */
+
+#transform-world {
+    height: 360px;
+    background-image: url("../images/woman-code.png");
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: 1px solid #33A8DB;
+    border-bottom: 1px solid #33A8DB;
+    transition-property: filter;
+    transition-duration: 1s;
+}
+
+#transform-world p {
+    margin-left: 5vw;
+    max-width: 30vw;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+    text-shadow: 3px 2px 0px #33A8DB;
+}
+
+#transform-world:hover {
+    filter: brightness(125%);
+}
+
+/* Parte 4: main -> professional-challenges */
+
+#professional-challenges {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    font-size: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #33A8DB;
+}
+
+#professional-challenges img {
+    margin: 36px auto;
+}
+
+#professional-challenges p {
+    margin-bottom: 90px;
+    max-width: 790px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+}
+
+/* Parte 5: footer */
+
+footer {
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin-top: 10px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #33A8DB;
+}
